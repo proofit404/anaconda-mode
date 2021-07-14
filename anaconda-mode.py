@@ -34,6 +34,7 @@ service_factory_dep = ('service_factory', '0.1.6')
 if not os.path.exists(server_directory):
     os.makedirs(server_directory)
 site.addsitedir(server_directory)
+sys.path.insert(0, server_directory)
 
 missing_dependencies = []
 
